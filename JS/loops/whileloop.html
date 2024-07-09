@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop || asli property</title>
+</head>
+<body>
+
+    <!-- <script>
+        let pass = prompt("Enter a password");
+        while(pass.length<6 || pass.length>10){
+            pass = prompt("Enter a password again ");
+        }
+        document.write(`Your new password is ${pass}`);
+
+    </script> -->
+
+    <script>
+        let pass = 'Bijay';
+        let newPassword = prompt('Enter the saved password :');
+        while(pass != newPassword){
+            newPassword = prompt("Password didnt match");
+        }
+        document.write(`Your new password is ${newPassword}`);
+        document.write(`Your new password is ${pass}`);
+    </script>
+</body>
+</html>

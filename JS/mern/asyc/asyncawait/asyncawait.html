@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async await</title>
+</head>
+<body>
+    <div class="test"></div>
+    <script>
+        const news = [
+            {
+                title: `Google acquires Fossil's smartwatch tech for $40M`,
+                content: `First content`
+            },
+            {
+                title: `Second title`,
+                content: `Second content`
+            },
+            {
+                title: `Third title`,
+                content: `Third content`
+            }
+        ];
+
+        const asyncFunc = async () => {
+            try {
+                await addNews({ title: 'Fourth title', content: 'Fourth content' });
+                showNews(); // After adding news, display them
+            } catch (e) {
+                document.write(e.message); // Print error message if there's an issue
+            } 
+            finally{
+                console.log("Game over");
+            }
+
+        };
+
+        asyncFunc(); // Call async function to add news and show them
+
+        function addNews(newNews) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    // Simulate adding news after 5 seconds
+                    news.push(newNews);
+                    let error = false; // Set error to false to resolve promise
+                    if (!error) {
+                        resolve(); // Resolve the promise if no error
+                    } else {
+                        reject({ message: "Cannot add news" }); // Reject with error message
+                    }
+                }, 5000); // Simulate async operation with 5 seconds delay
+            });
+        }
+
+        function showNews() {
+            // Display news in the 'test' div
+            let result = "<ul>";
+            news.forEach(post => {
+                result += `<li>${post.title}</li>`;
+            });
+            result += "</ul>";
+            document.querySelector('.test').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

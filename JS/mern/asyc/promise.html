@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch/Await</title>
+</head>
+<body>
+    <div></div>
+
+
+
+    <script>
+        // async/await is a modern JS features which makes asyncronise code easier to write. Working with promises and performing task asynchornously is easier by using it. 
+
+        // Async is usde to create an asynchornous function and await is used to wait tell the async task is completed..
+
+
+        const news = [
+                    {
+                        title: `Google acquires Fossil's smartwatch tech for $40M`,
+                        content : `Firstname`
+                    },
+                    {
+                        title: ` smartwatch tech `,
+                        content: `Second Title`
+                    },
+
+                    {
+                        title: `Third Name `,
+                        content: `Third Title`
+                    }
+
+
+            ]
+
+
+
+            const showNews = ()=>{
+                setTimeout(()=>{
+                   let result = ""
+                   news.forEach(post =>{
+                    result += `<li>${post.title}</li>`
+                   })
+                   console.log(result);
+                   document.querySelector('div').innerHTML = result;
+                }, 3000)
+            }
+
+            showNews();
+
+            const addNews = (newnews)=>{
+                return new Promise((resolve, reject)=>{
+                    setTimeout(()=>{
+                        news.push(newnews)
+                        let error = true
+                        if(!error)
+                        {eeeeee
+                            resolve ()
+                        }else{
+                            reject({msg: "Cannot Fetch News"})
+                        }
+                    }, 5000)
+                })
+
+            }
+            addNews({title: `Adding News `, content: `vayena`}) .then(showNews) .catch(e=>alert(e.msg))
+    </script>
+</body>
+</html>

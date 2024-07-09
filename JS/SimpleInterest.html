@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+</head>
+<body>
+    <script>
+        let principle1 = Number(prompt("Enter the principle :"));  // input taken as string by js  :: Number change the string to principe as number.
+        let rate = Number(prompt("Enter the rate :")); // input taken as string by js 
+        let time = Number(prompt("Enter the time :")); // input taken as string by js 
+
+        let SI = (principle*time*rate)/100;
+        let amount = SI + principle;
+        console.log(SI);
+        document.write(amount);  // it will contact "SI(number) + Principle(taken as input as string) so SI (number) is changed to SI (string) and get concat " to solve this problem.
+
+        document.write("The amount is " + amount + " when principle is, " + " time is " + time + "  ");
+        document.write(`The amount is ${amount} when principle is ${principle}, time is ${time} years and rate is ${rate}%`);  //:: template retrail es6 method new method.
+
+        // when we take value from any input file , it will treat the input value in string . 
+
+        let principle = (prompt("Enter the principle :"));   //es6 method 
+        // to solve this problem :: 
+
+/*
+        // 1. parseInt - parseFloat method 
+        let principle = parseInt(prompt("Enter the principle :")); 
+
+        // 2. Number method 
+        let principle = Number(prompt("Enter the principle :"));   //es6 method 
+
+        // 3. + method 
+        console.log(+"3663738"); 
+        let principle = +(prompt("Enter the principle :"));   //es6 method 
+
+
+*/
+
+    </script>
+</body>
+
+</html>

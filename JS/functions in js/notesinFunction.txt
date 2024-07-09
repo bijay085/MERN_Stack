@@ -1,0 +1,2 @@
+- No curly braces required for single statment in arrow function
+- No return keyword used while there is only one single operation done 
