@@ -1,0 +1,61 @@
+How to setup REACT things beginner guide.?
+
+-> Move to any drive (let say D)
+-> Download vs code and its extension (es7+ and css intellisense)
+-> Create new folder (suppose reactpractice)
+-> Open folder reactpractice in vs code
+
+There are 2 method , with vite and without vite 
+**Without vite**
+(if folder not created)
+-> mkdir reactpractice
+-> cd reactpractice
+
+-> npm init -y
+-> npm install react react-dom
+->npm start
+
+Basic setup without advanced features.
+Requires more manual configuration and setup to achieve the same level of functionality provided by Vite out-of-the-box.
+
+**With vite**
+
+-> npm create vite@latest reactpractice
+-> cd reactpractice
+-> npm install
+-> npm run dev
+
+
+Now setting up cra (CREATE REACT APP)
+**With CRA**
+-> npx create-react-app reactpractice
+-> cd reactpractice
+-> npm start
+
+**React project with vite**
+-> npm create vite@latest reactpractice
+Project name: reactpractice
+Select a framework: React
+Select a variant: JavaScript
+-> cd reactpractice
+-> npm install
+-> npm run dev
+
+
+Configuration
+**CRA:**
+Uses Webpack and Babel under the hood.
+Comes with a pre-configured build and development setup that covers most common use cases.
+Customization often requires ejecting the configuration (npm run eject), which exposes the underlying configuration files.
+
+**Vite:**
+Uses Rollup for production builds and esbuild for development, providing faster builds and HMR.
+Easier to configure and extend with plugins.
+Minimal setup out-of-the-box, with a focus on modern JavaScript features
+
+
+**Summary**
+Without Vite: Basic setup without advanced features. Requires more manual configuration and setup to achieve the same level of functionality provided by Vite out-of-the-box.
+With Vite: Provides a streamlined and efficient development experience with fast builds and HMR.
+With CRA: Offers a robust and comprehensive setup with more built-in features but can be more complex to customize.
+**By Bijay**
