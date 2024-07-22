@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Posts from './components/Posts';
 import MainPage from './pages/MainPage';
 import CarouselPage from './pages/CarouselPage';
+import DisplayProducts from './components/products/DisplayProducts';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/posts" element={<Posts />} />
         <Route path="/main" element={<MainPage />} />
         <Route path="/carousel" element={<CarouselPage />} />
+        <Route path='/components/products/DisplayProducts' element={<DisplayProducts/>} />
       </Routes>
     </div>
   );

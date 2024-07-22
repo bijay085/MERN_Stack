@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "product_title":"Fancy Watch",
+        "product_image_url":"/images/a.jpg",
+        "product_price": 1200
+    },
+    {
+        "id":2,
+        "product_title":"Fancy Watch 2",
+        "product_image_url":"/images/b.jpg",
+        "product_price": 7383
+    },
+    {
+        "id":3,
+        "product_title":"Fancy Watch 3",
+        "product_image_url":"/images/c.jpg",
+        "product_price": 2628
+    },
+    {
+        "id":4,
+        "product_title":"Fancy Watch 4",
+        "product_image_url":"/images/d.jpg",
+        "product_price": 29373
+    },
+    {
+        "id":5,
+        "product_title":"Fancy Watch 5",
+        "product_image_url":"/images/e.jpg",
+        "product_price": 5363
+    }
+]
