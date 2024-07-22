@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 
+// const ProductCard = ({image, title="hello", price}) => { here if image or any data didnt came from backend then we can make here default value due to using props
 const ProductCard = ({image, title, price}) => {
     return (
         <>
