@@ -9,6 +9,9 @@ import Posts from './components/Posts';
 import MainPage from './pages/MainPage';
 import CarouselPage from './pages/CarouselPage';
 import DisplayProducts from './components/products/DisplayProducts';
+import Drawer from './components/drawer/Drawer';
+
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
         <Route path="/main" element={<MainPage />} />
         <Route path="/carousel" element={<CarouselPage />} />
         <Route path='/components/products/DisplayProducts' element={<DisplayProducts/>} />
+        <Route path='/components/drawer/Drawer' element={<Drawer/>} />
       </Routes>
     </div>
   );
